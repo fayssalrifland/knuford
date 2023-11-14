@@ -1,0 +1,492 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+body{
+    font-family: "roboto", sans-serif;
+    background-color: #f8f8f8;
+    
+}
+.navbar .logo{
+    font-weight: 800;
+    font-size: 20px;
+    color:#fff;
+}
+.navbar{
+    position: fixed;
+    display: inline-flex;
+    align-items: center;
+    /* position: absolute; */
+    padding-left: 25%;
+    padding-top: 5px;
+    z-index: 999;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 22rem;
+}
+.navbar ul li{
+    padding: 20px 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.7);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+/* ******************************start Home* ************************* */
+
+.home {
+    background-image: url("./img/homebg.jpg");
+    background-attachment: fixed;
+    height: 200vh;
+    width: 100%;
+    position:relative;
+    box-sizing: border-box;
+}
+.home .presentation
+{
+    position: absolute;
+    font-weight: 500;
+    font-size: 15px;
+    top: 19.5rem;
+    left:28rem;
+}
+.slogan{
+    margin-bottom:15px;
+}
+.home .presentation h2{
+    font-weight: 400;
+    font-size: 60px;
+}
+.home .presentation p{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 30px;
+}
+
+.hireme{
+    display: inline-block; 
+    font-weight: 400; 
+    line-height: 1.5; 
+    color: #212529; 
+    text-align: center; 
+    text-decoration: none; 
+    vertical-align: middle; 
+    cursor: pointer;  
+    background-color: transparent; 
+    border: 1px solid transparent; 
+    padding: 1rem 1.5rem 1rem 1.2rem ; 
+    font-size: 1rem; 
+    border-radius: 0.25rem; 
+    color: #fff; 
+    background-color: #0d6efd; 
+    border-color: #0d6efd;
+    font-size: 12px;  
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+    margin-right: 10px ;
+
+}
+.viewportfolio{
+    display: inline-block; 
+    font-weight: 400; 
+    line-height: 1.5; 
+    color: #212529; 
+    text-align: center; 
+    text-decoration: none; 
+    vertical-align: middle; 
+    cursor: pointer;  
+    background-color: transparent; 
+    border: 1px solid transparent; 
+    padding: 1rem 1.5rem 1rem 1.2rem ; 
+    font-size: 1rem; 
+    border-radius: 0.25rem; 
+    color: #0d6efd; 
+    background-color: #ffff; 
+    border-color: #ffff;
+    font-size: 12px;  
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+    margin-right: 10px ;
+}
+.btn{
+    margin-bottom: 4.321rem;
+}
+.socialmedia a{
+    text-decoration: NONE;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    padding-right: 15px;
+    letter-spacing: 1px;
+}
+/* this is fot bobble text  (Hi There) */
+.bubble-text {
+    position: relative;
+    background: #ffffff;
+    color: #0779e4;
+    font-weight: 800;
+    font-size: 15px;
+    text-align: center;
+    width: 99px;
+    height: 26px;
+    border-radius: 3px;
+    padding-top: 5px;
+    margin-bottom: 15px;
+}
+.bubble-text:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-color: #ffffff transparent;
+    border-width: 10px 9px 0;
+    bottom: -7px;
+    left: 50%;
+    margin-left: -9px;
+}
+
+/* End   bobble text */
+
+.presentation .slogan span,h1{
+    font-weight: 700;
+    font-size: 60px;
+    letter-spacing: 4px;
+    color: #ffff;
+}
+/* *********************  END HOME   ********************* */
+
+/* *********************  END ABOUT  ********************* */
+
+.About{
+    display: flex;
+    margin: 4rem 0rem 0rem 24%;
+
+}
+.happyface {
+    background-image: url("./img/happy.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 556px;
+    height: 600px;
+}
+
+.about_content{
+    margin-left: 2rem;
+}
+.about_content ul{
+    margin-right: 4rem;
+}
+.about_content ul  li{ 
+   display:inline;
+   text-decoration: none;
+   padding: 0 1rem 0 0;
+}
+.about_content ul  li a{
+    text-decoration: none;
+    justify-content: center;
+    letter-spacing: 1.5px;
+    color: #fff;
+}
+
+/* bubblt text for 'About me', 'SKiils','eXPERIENCE' */
+
+
+.about_content #aboutme,#skills,#experience{
+    position: relative;
+    background: #0779e4;
+    font-size: 11px;
+    line-height: 91px;
+    text-align: center;
+    width: 100px;
+    height: 89px;
+    border-radius: 5px;
+    padding: 1rem;
+    color: #fff;
+    margin-left: 1rem;
+}
+.about_content #aboutme:after,#skills:after,#experience:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-color: #0779e4 transparent;
+    border-width: 10px 10px 0;
+    bottom: -6px;
+    left: 60%;
+    margin-left: -20px;
+}
+.sec, .Skills, .Experience{
+    width: 550px;
+}
+
+#tttl{
+    color: #212529;
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.sec #ttl{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.sec p{
+    margin: 1.235rem  0;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.progressbar{
+    display: flex;
+    margin-top: 2rem;
+}
+
+/* *********** progressbar ***********  */
+
+
+/* *********** progressbar1 ***********  */
+
+/* ********* adobe photshop ********* */
+.flxprogressbar1 #adbphotoshop{
+    background-color: rgb(177, 176, 176);
+    border-radius: 2px;
+    width: 16rem;
+    height: 8px;
+    margin: 15px 5px 15px 0px;
+}
+.flxprogressbar1 #adbphotoshop div{
+    position: absolute;
+    background-color: #0779e4;
+    border-radius: 2px;
+    width: 14rem;
+    height: 8px;
+}
+/* ********* JAva Script ********* */
+.flxprogressbar1 #js{
+    background-color: rgb(177, 176, 176);
+    border-radius: 2px;
+    width: 16rem;
+    height: 8px;
+    margin: 15px 5px 15px 0px;
+}
+
+.flxprogressbar1 #js div{
+    position: absolute;
+    background-color: #0779e4;
+    border-radius: 2px;
+    width: 13.5rem;
+    height: 8px;
+}
+
+/* *********** progressbar2 ***********  */
+
+/* ********* HTML  /  CSS ********* */
+.flxprogressbar2{
+    margin-left: 1rem;
+}
+.flxprogressbar2 #htmlcss{
+    background-color: rgb(177, 176, 176);
+    border-radius: 2px;
+    width: 16rem;
+    height: 8px;
+    margin: 15px 5px 15px 0px;
+}
+
+.flxprogressbar2 #htmlcss div{
+    position: absolute;
+    background-color: #0779e4;
+    border-radius: 2px;
+    width: 15rem;
+    height: 8px;
+}
+/* ********* WORDPRESS ********* */
+.flxprogressbar2 #Wordpress{
+    background-color: rgb(177, 176, 176);
+    border-radius: 2px;
+    width: 16rem;
+    height: 8px;
+    margin: 15px 5px 15px 0px;
+}
+
+.flxprogressbar2 #Wordpress div{
+    position: absolute;
+    background-color: #0779e4;
+    border-radius: 2px;
+    width: 14.5rem;
+    height: 8px;
+}
+
+
+#perct1{
+    margin-left: 1.5rem;
+    color:#0779e4;
+}
+#perct2{
+    margin-left: 1.5rem;
+    color:#0779e4;
+}
+#perct3{
+    margin-left: 6.5rem;  
+    color:#0779e4;
+}
+#perct4{
+    margin-left: 5.5rem;
+    color:#0779e4;
+}
+
+.flxprogressbar1 span{
+    font-size: 15px;
+    font-weight: 400;
+}
+.flxprogressbar2 span{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+.Experience {
+    display: flex;
+    flex-direction: column;
+}
+.Experience  p,span{
+    padding: 15px  0px;
+}
+.Experience #titl{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "roboto";
+}
+.Experience span,#txt{
+    color: rgb(172, 172, 172);
+  }
+.Experience #txt{
+    font-size: 19px;
+    font-weight: 400;
+    font-family: "roboto";
+    line-height: 2.6rem;
+}
+
+/* ****************  PART 3  services  **************** */
+
+
+
+.services{
+    margin-bottom: 10rem;
+}
+.cards{
+    display: flex;
+    place-items: center;
+    margin-left: 18%;
+}
+.services #serv{
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    color: #0779e4;
+    margin: 1.123rem 0rem;
+}
+.services #servp{
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 1.7rem;
+}
+
+.cards .card1,.card2,.card3{
+    margin: 0px 2rem;
+    background-color: #fff;
+    width: 300px;
+    height: 400px;
+}
+.cards h3{
+    color: #0779e4;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+.cards .bubble img{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+    padding-top: 15%;
+}
+.cards p{
+    color: rgb(177, 176, 176);
+    font-size: 17px;
+    font-weight: 200;
+    margin-left: 1.5rem;
+    line-height: 2rem;
+}
+.cards a{
+    text-decoration: none;
+    color: #0779e4;
+    margin-left: 1.5rem;
+    padding-top: 2.5rem;
+}
+.cards a i{
+    padding: 4px 0px 0px 5px;
+}
+.services .cntct{
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(131, 121, 121);
+    margin-top: 2.235rem;
+    text-align: center;
+}
+.services .cntct a{
+    color: #0779e4;
+    text-decoration: none;
+}
+.services .cntcts{
+    text-align: left;
+    margin-left: 43rem;
+    font-size: 18px;
+    font-weight: 200;
+    color:rgb(177, 176, 176) ;
+    margin-top: 1.235rem;
+    line-height: 2rem;
+}
+
+.services .bubble
+{
+   position: relative;
+   width: 120px;
+   height: 100px;
+   padding: 0px;
+   background: #0779e4;
+   -webkit-border-radius: 0px;
+   -moz-border-radius: 0px;
+   border-radius: 0px;
+   margin-top: 1.5rem;
+   margin-left: 1.5rem;
+}
+
+.services .bubble:after
+{
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 9px 9px 0;
+    border-color: #0779e4 transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    bottom: -6px;
+    left: 50px;
+}
+
