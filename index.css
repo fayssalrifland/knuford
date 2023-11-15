@@ -508,4 +508,38 @@ div.transparant{
     top: 0;
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.transparant .happycostumer,.projectcomplet,.cups{
+    display: flex;
+}
+.status img{
+    width: 70px;
+    height: 70px;
+    margin-right: 16px;
+    padding-bottom: -60px;
+}
+.status  #img3{
+    width: 75px;
+    height: 75px;
+}
+.status  #img2{
+    width: 80px;
+    height: 80px;
+}
+.status p{
+    color: #fff;
+}
+.status .number{
+    font-size: 38px;
+    font-weight: 700;
+}
+.status .slogan{
+    font-size: 14px;
+    font-weight: 700;
+}
+.status .projectcomplet{
+    margin: 0px 10rem;
 }
