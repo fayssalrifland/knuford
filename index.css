@@ -543,3 +543,58 @@ div.transparant .happycostumer,.projectcomplet,.cups{
 .status .projectcomplet{
     margin: 0px 10rem;
 }
+
+/* ****************  PART 5  Portfolio  **************** */
+.portfolio{
+    margin-left: 26%;
+}
+.portfolio h4{
+    font-size: 13px;
+    font-weight: 700;
+    color: #0779e4;
+    margin: 1.5rem 0rem 1.5rem 31%;
+}
+.portfolio p{
+    font-size: 40px;
+    font-weight: 700;
+    margin: 1.5rem 0rem 1.5rem 24%;
+}
+.cardss {
+    display: grid;
+    grid-template-columns: repeat(2, 456px);
+    grid-template-rows: repeat(3, 350px);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    }
+    .card11,.card22,.card33,.card44,.card55,.card66{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .cardss img{
+        width: 100%;
+        height: 100%;
+    }
+
+    div.item:hover{
+        background-color: rgba(7,121,228,.8);
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .item p{
+        font-size: 20px;
+        font-weight: 400;
+        color: #fff;
+    }
+    .item h5{
+        font-size: 12px;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.8);
+        margin-left: 42%;
+    }
