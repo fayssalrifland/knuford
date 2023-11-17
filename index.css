@@ -570,13 +570,14 @@ div.transparant .happycostumer,.projectcomplet,.cups{
         width: 100%;
         height: 100%;
         position: relative;
+        overflow: hidden;
     }
     .cardss img{
         width: 100%;
         height: 100%;
     }
 
-    div.item:hover{
+    div.item{
         background-color: rgba(7,121,228,.8);
         position: absolute;
         left: 0;
@@ -586,6 +587,7 @@ div.transparant .happycostumer,.projectcomplet,.cups{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        
     }
     .item p{
         font-size: 20px;
@@ -598,3 +600,93 @@ div.transparant .happycostumer,.projectcomplet,.cups{
         color: rgba(255, 255, 255, 0.8);
         margin-left: 42%;
     }
+
+    
+    /* *************    hover on cards  *************  */
+ 
+    /* ******** Card11 ******** */
+    .card11:hover .item{
+        opacity: 1;
+        transform: scale(1);
+      }
+      
+      .item{
+        position: absolute;
+        background-color: rgba(255,0,0,.7);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        transform: scale(1.3);
+        opacity: 0;
+        transition: transform .4s ease 0s;
+      }
+
+      .card11 img{
+        transition: transform .8s ease;
+      }
+      
+      .card11:hover .item{
+        transform: scale(1.1);
+      }
+      /* ******** Card22 ******** */
+      .card22:hover .item{
+        opacity: 1;
+        transform: scale(1);
+      }
+      .card22 img{
+        transition: transform .8s ease;
+      }
+      
+      .card22:hover .item{
+        transform: scale(1.1);
+      }
+      /* ******** Card33 ******** */
+      .card33:hover .item{
+        opacity: 1;
+        transform: scale(1);
+      }
+      .card33 img{
+        transition: transform .8s ease;
+      }
+      
+      .card33:hover .item{
+        transform: scale(1.1);
+      }
+      /* ******** Card44 ******** */
+      .card44:hover .item{
+        opacity: 1;
+        transform: scale(1);
+      }
+      .card44 img{
+        transition: transform .8s ease;
+      }
+      
+      .card44:hover .item{
+        transform: scale(1.1);
+      }
+      /* ******** Card55 ******** */
+      .card55:hover .item{
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      .card55 img{
+        transition: transform .8s ease;
+      }
+      
+      .card55:hover .item{
+        transform: scale(1.1);
+      }
+      /* ******** Card66 ******** */
+      .card66:hover .item{
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      .card66 img{
+        transition: transform .8s ease;
+      }
+      
+      .card66:hover .item{
+        transform: scale(1.1);
+      }
