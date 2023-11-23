@@ -693,31 +693,38 @@ div.transparant .happycostumer,.projectcomplet,.cups{
       }
 
       /* ****************  PART 6  Reviews  **************** */
-      .carousel-countiner{
-        display: flex;
-        margin-left: 20%;
-      }
 
-      .reviews-people h4{
+.carousel-countiner .carousel-track{
+    display: flex;
+}
+.reviews-people{
+  overflow: hidden; 
+  width: 1500px;
+  margin-left: 9%;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} 
+
+.reviews-people h4{
         font-weight: 700;
         font-size: 13px;
         color: #0779e4;
         margin: 2rem 0px;
         text-align: center;
       }
-      .reviews-people h2{
+ .reviews-people h2{
         font-weight: 700;
         font-size: 40px;
         margin: 2rem 0px;
         text-align: center;
       }
-     .img-carousel img{
+.img-carousel img{
         width: 80px;
         height: 80px;
         border-radius: 50%;
         padding-right: 16px;
      }
-     .img-carousel{
+.img-carousel{
         display: flex;
         padding: 2rem;
      }
@@ -736,10 +743,12 @@ div.transparant .happycostumer,.projectcomplet,.cups{
 }
 .carousel-item
      {
-        width: 312px;
+        width: 330px;
         height: 308px;
         background-color: #ffffff;
-        margin: 3rem;
+        margin: 2.5rem 3rem 2.5rem 16px;
+        min-width: 20%;
+        justify-content:center;
      }
 .carousel-item p{
     font-size: 16px;
@@ -760,3 +769,29 @@ div.transparant .happycostumer,.projectcomplet,.cups{
         margin-left: 50px;
         margin-top: 50px;
       }
+
+
+      .lines{
+        display: flex;
+        justify-content: center;
+        padding-top: -35px;
+      }
+      .lines img{
+        width: 90px;
+        height: 100px;
+      }
+.carousel-track{
+    display: flex;
+    /* justify-content: center; */
+    /* margin-left: 300px; */
+    border: 1px solid red;
+}
+.carousel-track .part2{
+    margin-left: 20%;
+    display: flex;
+    border: 2px solid blue;
+}
+
+
+
+

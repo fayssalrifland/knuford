@@ -78,3 +78,26 @@ hidseButton.addEventListener('click', () => {
     text2.style.display = 'none';
     text3.style.display = 'block';
 });
+
+//***********  aotoplay carousel  ***********
+    /*const track = document.getElementById('carouselTrack');
+    const items = document.querySelectorAll('.carousel-item');
+    const totalItems = items.length;
+    let currentIndex = 0;
+
+    // Auto play functionality
+    function startCarousel() {
+        setInterval(() => {
+            moveCarousel(3);
+        }, 3000); // Change slide every 3 seconds (adjust as needed)
+    }
+
+    // Move the carousel track
+    function moveCarousel(direction) {
+        currentIndex = (currentIndex + direction + totalItems) % totalItems;
+        const newPosition = -currentIndex * 20 + '%';
+        track.style.transform = 'translateX(' + newPosition + ')';
+    }
+
+    startCarousel(); 
+    */
