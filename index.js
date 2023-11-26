@@ -80,7 +80,7 @@ hidseButton.addEventListener('click', () => {
 });
 
 //***********  aotoplay carousel  ***********
-    /*const track = document.getElementById('carouselTrack');
+ const track = document.getElementById('carouselTrack');
     const items = document.querySelectorAll('.carousel-item');
     const totalItems = items.length;
     let currentIndex = 0;
@@ -100,4 +100,4 @@ hidseButton.addEventListener('click', () => {
     }
 
     startCarousel(); 
-    */
+ 

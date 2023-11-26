@@ -703,6 +703,7 @@ div.transparant .happycostumer,.projectcomplet,.cups{
   margin-left: 9%;
   position: relative;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid red;
 } 
 
 .reviews-people h4{
@@ -753,7 +754,7 @@ div.transparant .happycostumer,.projectcomplet,.cups{
 .carousel-item p{
     font-size: 16px;
     font-weight: 400;
-    line-height: 2rem;
+    line-height: 1.895rem;
     padding: 0px 1.8rem 2.5rem 1.8rem;
     color: #999999;
 }
@@ -784,7 +785,9 @@ div.transparant .happycostumer,.projectcomplet,.cups{
     display: flex;
     /* justify-content: center; */
     /* margin-left: 300px; */
+    width: 100%;
     border: 1px solid red;
+    padding-left: 15rem;
 }
 .carousel-track .part2{
     margin-left: 20%;
@@ -793,5 +796,250 @@ div.transparant .happycostumer,.projectcomplet,.cups{
 }
 
 
+/* ****************  PART 7  Blogs  **************** */
+
+.Blogs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Blogs h6{
+    font-size: 13px;
+    font-weight: 700;
+    color: #0779e4;
+    margin-top: 20rem;
+}
+.Blogs .title-blog{
+    font-size: 40px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.8);
+    margin: 2rem 0 4rem 0;
+}
+.Blogs .blogs-subject{
+    display: grid;
+    grid-template-columns: repeat(2, 490px);
+    grid-template-rows: repeat(3, 550px);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    }
+.blogs-items{
+    background-color: #ffffff;
+    box-shadow: 0px 10px 5px 0px rgba(217,217,217,0.76);
+    border-radius: 5px;
+}    
+.blogs-items  img{
+    width: 490px;
+    height: 350px;
+}
+.blogcontent{
+    margin: 1.8rem;
+}
+.blogcontent span {
+    font-size: 13px;
+    font-weight: 600;
+    color:#999999;
+}
+.blogcontent span a{
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #0779e4;
+}
+.blogcontent a{
+    text-decoration: none;
+}
+.blogcontent a h2{
+    font-size: 20px;
+    font-weight: 500;
+    color: black; 
+    padding: 1rem 0;  
+}
+.blogcontent a h2:hover{
+    color: #0779e4;
+    transition-delay: 200ms;
+}
+.blogcontent p{
+    font-size: 16;
+    font-weight: 400;
+    color: #999999;
+    line-height: 2rem;
+}
+
+/* ****************  PART 8  Prices  **************** */
+
+.price-content{
+    display: flex;
+}
+.prices h3{
+    font-size: 13px;
+    font-weight: 700;
+    color: #0779e4;
+    text-align: center;
+    margin: 5rem 0 1rem 0;
+}
+.prices h2{
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 3rem 0;
+}
+.price-content .price-items{
+    width: 350px;
+    height: 500px;
+    box-shadow: 6px 5px 31px 0px rgba(0,0,0,0.17);
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+    background-color: white;
+}
+.price-content .price-items h1{
+    font-size: 50px;
+    color: #0779e4;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+.price-content .price-items p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #999999;
+    padding:0 3rem 3rem 2rem;
+    text-align: center;
+    line-height: 2.5rem;
+}
+.price-items .original-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    text-decoration: none;
+    color: #0779e4;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 5px;
+    width: 199px;
+    height: 50px;
+    background-color: none;
+    border: 1px solid #0779e4;
+  }
+  .price-items .original-button:hover{
+    background-color: #0779e4;
+    color: #fff;
+  }
+
+/* ****************  PART 9  Contact  **************** */
+.contact{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: stretch;
+	align-content: stretch;
+    width: 100%;
+    height: 700px;
+}
+.contact .map{
+    width: 50%;
+}
+.contact .contact-infos{
+    width: 50%;
+    background-color: #fff;
+}
+
+.contact .contact-infos .contact-personal{
+    display: flex;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 1.6rem;
+}
+.contact .contact-infos .contact-personal .myadress{
+    margin-right: 1.5rem;
+}
+.contact .contact-infos .contact-personal .myemail{
+    margin-right: 2rem;
+}
+
+.contact .contact-infos h3{
+    font-size: 30px;
+    font-weight: 4000;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1.6rem;
+}
+.contact .contact-infos h4{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+}
+
+
+/* *********   form  ********* */
+.contact-adress form{
+    margin-left: 2rem;
+}
+.contact-adress form .form-row{
+    display: flex;
+    width: 100%;
+}
+.contact-adress form .form-row .formcarry-block{
+    width: 100%;
+}
+.contact-adress form .form-row #fc-generated-1-name{
+    width: 75%;
+    height: 45px;
+    margin-right: 15px;
+}
+.contact-adress form .form-row #fc-generated-1-email{
+    width: 70%;
+    height: 45px;
+    /* margin-right: 15px; */
+}
+.contact-adress form .formcarry-block1 input{
+    width: 85%;
+    height: 45px;
+    margin: 0.5rem 0;
+}
+.contact-adress form .formcarry-block2 textarea{
+    width: 85%;
+    height: 100px;
+}
+.contact-adress form button{
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: #fff;
+    background-color: #0066CC;
+    padding: 10px 30px;
+    border: solid #0066cc 2px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 5px;
+    transition : 1000ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.contact-infos .socialmedia{
+    margin-left: 2rem;
+}
+.contact-infos .socialmedia h2{
+    font-size: 20px;
+    font-weight: 400;
+}
+.contact-infos .socialmedia .scmedia{
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+.contact-infos .socialmedia .scmedia a{
+    text-decoration: none;
+    color: #0779e4;
+    font-size: 13px;
+    font-weight: 600;
+}
 
 
