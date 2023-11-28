@@ -100,4 +100,15 @@ hidseButton.addEventListener('click', () => {
     }
 
     startCarousel(); 
- 
+ /* ******************* scroll ********************* */
+ function scrollValue() {
+    var navbar = document.getElementById('navBar');
+    var scroll = window.scrollY;
+    if (scroll < 200) {
+        navbar.classList.remove('bgnavbar');
+    } else {
+        navbar.classList.add('bgnavbar');
+    }
+}
+
+window.addEventListener('scroll', scrollValue);
