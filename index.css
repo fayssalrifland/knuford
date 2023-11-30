@@ -12,30 +12,50 @@ body{
     font-weight: 800;
     font-size: 20px;
     color:#fff;
+    display: flex;
+    align-items: center;
 }
 .navbar{
     position: fixed;
     display: flex;
-    align-items: center;
-    /* position: absolute; */
     padding-left: 25%;
-    padding-top: 32px;
     z-index: 999;
     transition: background-color 0.5s ease;
     width: 100%;
+    height: 70px;
 }
+/* START bubble text for menu link */
+.navbar ul .bubble{
+    position: relative;
+    /* line-height: 100px; */
+    color: #FFFFFF;
+    text-align: center;
+    background: #3e9ff9;
+ }
+ 
+ .navbar ul .bubble:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 15px 15px 0;
+    border-color: #3e9ff9 transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    bottom: -15px;
+    left: 25px;
+ }
+ 
+ /* END  bubble text for menu link */
 .bgnavbar{
     color: white;
     transition: all 0.4s;
     background-color: #0779e4;
-    padding-top: 10px;
-    padding-bottom: 16px;
 }
 .navbar ul{
     list-style: none;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-left: 22rem;
 }
 .navbar ul li{
@@ -47,6 +67,10 @@ body{
     font-weight: 500;
     font-size: 15px;
 }
+/* #Home11{
+    background-color: #999999;
+} */
+
 
 /* ******************************start Home* ************************* */
 
@@ -879,6 +903,8 @@ div.transparant .happycostumer,.projectcomplet,.cups{
 
 .price-content{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .prices h3{
     font-size: 13px;
@@ -942,9 +968,6 @@ div.transparant .happycostumer,.projectcomplet,.cups{
 .contact{
     display: flex;
 	flex-direction: row;
-	flex-wrap: nowrap;
-	align-items: stretch;
-	align-content: stretch;
     width: 100%;
     height: 700px;
 }
@@ -1099,6 +1122,8 @@ div.transparant .happycostumer,.projectcomplet,.cups{
     display: flex;
     margin-top: 6rem;
     margin-bottom: 3rem;
+    justify-content: center;
+    align-items: center;
 }
 /* ****** foter-socialmedia  ****** */
 .footer .foter-socialmedia a{

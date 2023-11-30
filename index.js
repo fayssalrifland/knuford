@@ -104,7 +104,7 @@ hidseButton.addEventListener('click', () => {
  function scrollValue() {
     var navbar = document.getElementById('navBar');
     var scroll = window.scrollY;
-    if (scroll < 200) {
+    if (scroll < 200 ) {
         navbar.classList.remove('bgnavbar');
     } else {
         navbar.classList.add('bgnavbar');
