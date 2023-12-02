@@ -25,15 +25,15 @@ body{
     height: 70px;
 }
 /* START bubble text for menu link */
-.navbar ul .bubble{
+.bubbles{
     position: relative;
-    /* line-height: 100px; */
     color: #FFFFFF;
     text-align: center;
     background: #3e9ff9;
+    transition: all 0.4s;
  }
  
- .navbar ul .bubble:after {
+.bubbles:after{
     content: '';
     position: absolute;
     border-style: solid;
@@ -44,6 +44,7 @@ body{
     z-index: 1;
     bottom: -15px;
     left: 25px;
+    transition: all 0.4s;
  }
  
  /* END  bubble text for menu link */
@@ -416,6 +417,7 @@ body{
 
 .services{
     margin-bottom: 10rem;
+    margin-top: 20rem;
 }
 .cards{
     display: flex;
@@ -775,14 +777,13 @@ div.transparant .happycostumer,.projectcomplet,.cups{
     font-weight: 500;
     color: #0084ff;
 }
-.carousel-item
-     {
-        width: 330px;
-        height: 308px;
-        background-color: #ffffff;
-        margin: 2.5rem 3rem 2.5rem 16px;
-        min-width: 20%;
-        justify-content:center;
+.carousel-item {
+    width: 330px;
+    height: 308px;
+    background-color: #ffffff;
+    margin: 2.5rem 3rem 2.5rem 16px;
+    min-width: 20%;
+    justify-content:center;
      }
 .carousel-item p{
     font-size: 16px;
@@ -792,40 +793,38 @@ div.transparant .happycostumer,.projectcomplet,.cups{
     color: #999999;
 }
 .img-carousel .fa-quote-left{
-        position: absolute;
-        background-color: #0779e4;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 50px;
-        margin-top: 50px;
-      }
+  position: absolute;
+  background-color: #0779e4;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+  margin-top: 50px;
+}
 
 
-      .lines{
-        display: flex;
-        justify-content: center;
-        padding-top: -35px;
-      }
-      .lines img{
-        width: 90px;
-        height: 100px;
-      }
+.lines{
+  display: flex;
+  justify-content: center;
+  padding-top: -35px;
+}
+.lines img{
+  width: 90px;
+  height: 100px;
+}
 .carousel-track{
     display: flex;
-    /* justify-content: center; */
-    /* margin-left: 300px; */
     width: 100%;
-    border: 1px solid red;
     padding-left: 15rem;
 }
 .carousel-track .part2{
-    margin-left: 20%;
+    /* margin-left: 20%; */
     display: flex;
-    border: 2px solid blue;
+    position: absolute;
+    margin-left: 74rem;
 }
 
 
@@ -905,6 +904,10 @@ div.transparant .happycostumer,.projectcomplet,.cups{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.prices{
+    margin-top: 17rem;
+    margin-bottom: 15rem;
 }
 .prices h3{
     font-size: 13px;
