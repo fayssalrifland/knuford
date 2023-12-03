@@ -2,6 +2,9 @@
     margin:0px;
     padding: 0px;
 }
+/* html{
+    scroll-behavior: smooth;
+} */
 body{
     font-family: "roboto", sans-serif;
     background-color: #f8f8f8;
@@ -413,8 +416,6 @@ body{
 
 /* ****************  PART 3  services  **************** */
 
-
-
 .services{
     margin-bottom: 10rem;
     margin-top: 20rem;
@@ -422,12 +423,13 @@ body{
 .cards{
     display: flex;
     place-items: center;
-    margin-left: 18%;
+    align-items: center;
+    justify-content: center;
 }
 .services #serv{
     text-align: center;
-    font-weight: 400;
-    font-size: 20px;
+    font-weight: 700;
+    font-size: 13px;
     color: #0779e4;
     margin: 1.123rem 0rem;
 }
@@ -435,15 +437,22 @@ body{
     text-align: center;
     font-weight: 700;
     font-size: 40px;
-    margin-bottom: 1.7rem;
+    margin-bottom: 5rem;
 }
 
 .cards .card1,.card2,.card3{
-    margin: 0px 2rem;
+    margin: 1rem 2rem;
     background-color: #fff;
     width: 300px;
     height: 400px;
 }
+.cards .card1 {
+    margin-right: -10px;
+}
+.cards .card2{
+    margin-right: -10px;
+}
+
 .cards h3{
     color: #0779e4;
     font-size: 20px;
@@ -453,8 +462,8 @@ body{
     margin-bottom: 1rem;
 }
 .cards .bubble img{
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -483,6 +492,7 @@ body{
     color: rgb(131, 121, 121);
     margin-top: 2.235rem;
     text-align: center;
+    margin-left: -100px;
 }
 .services .cntct a{
     color: #0779e4;
@@ -501,8 +511,8 @@ body{
 .services .bubble
 {
    position: relative;
-   width: 120px;
-   height: 100px;
+   width: 70px;
+   height: 60px;
    padding: 0px;
    background: #0779e4;
    -webkit-border-radius: 0px;
@@ -523,7 +533,7 @@ body{
     width: 0;
     z-index: 1;
     bottom: -6px;
-    left: 50px;
+    left: 27px;
 }
 
 /* ****************  PART 4  status  **************** */
