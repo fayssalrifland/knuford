@@ -214,10 +214,36 @@ window.addEventListener('scroll', scrollValue);
    let endvalue =parseInt(valuedisplays.getAttribute("data-val"));
    let duration = Math.floor(interval /endvalue);
    let counter =setInterval(function (){
-      startvalue += 10;
+      startvalue += 5;
       valuedisplays.textContent = startvalue ;
       if ( startvalue == endvalue) {
          clearInterval(counter);
       }
    }, duration);
  })
+
+
+
+
+
+
+ /* ******************* animation on scroll  ********************* */
+
+ function reveal() {
+   var reveals = document.querySelectorAll(".reveal");
+ 
+   for (var i = 0; i < reveals.length; i++) {
+     var windowHeight = window.innerHeight;
+     var elementTop = reveals[i].getBoundingClientRect().top;
+     var elementVisible = 150;
+ 
+     if (elementTop < windowHeight - elementVisible) {
+       reveals[i].classList.add("active");
+     } else {
+       reveals[i].classList.remove("active");
+     }
+   }
+ }
+ 
+ window.addEventListener("scroll", reveal);
+ 
