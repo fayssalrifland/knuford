@@ -1,52 +1,122 @@
 /* ******************  PART 1 Home   *******************/
 
-.fadeInUp {
-    -webkit-animation-name: fadeInUp;
+/* .fadeInUp {
     animation-name: fadeInUp;
-    -webkit-animation-duration: 1s;
     animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
     }
     @-webkit-keyframes fadeInUp {
     0% {
     opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 50%, 0);
     }
     100% {
     opacity: 1;
-    -webkit-transform: none;
     transform: none;
     }
     }
     @keyframes fadeInUp {
     0% {
     opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 50%, 0);
     }
     100% {
     opacity: 1;
-    -webkit-transform: none;
     transform: none;
     }
-    } 
+    }  */
+
+/* ******************  PART 2 About  *******************/
+
+.happyface{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+.happyface.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.animes{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.animes.active{
+  transform: translateY(0);
+  opacity: 1;
+}
 
 
-
-
-
-
-
+/* ******************  PART 3 Services  *******************/
 
 .reveal{
     position: relative;
     transform: translateY(150px);
     opacity: 0;
-    transition: 2s all ease;
+    transition: 1s all ease;
   }
   .reveal.active{
     transform: translateY(0);
     opacity: 1;
   }
+
+  /* ******************  PART 4 Status  *******************/
+
+  .trans{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  .trans.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+
+  
+  .happycostumer{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 0.5s all ease;
+  }
+  .happycostumer.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .projectcomplet{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  .projectcomplet.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .cups{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1.5s all ease;
+  }
+  .cups.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+
+.status{
+  opacity: 0;
+  transition: 2.4s all ease;
+}
+.status.active{
+  opacity: 1;
+}

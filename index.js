@@ -203,32 +203,154 @@ hidseButton.addEventListener('click', () => {
 
 window.addEventListener('scroll', scrollValue);
 
- /* ******************* Count animation ********************* */
 
- let valuedisplay = document.querySelectorAll(".number");
- let interval = 1000;
+ /* ******************* Count animation on scroll********************* */
 
+ let nums = document.querySelectorAll(".status .number");
+let section = document.querySelector(".transparant");
+let started = false; // Function Started ? No
 
- valuedisplay.forEach((valuedisplays) =>{
-   let startvalue = 0;
-   let endvalue =parseInt(valuedisplays.getAttribute("data-val"));
-   let duration = Math.floor(interval /endvalue);
-   let counter =setInterval(function (){
-      startvalue += 5;
-      valuedisplays.textContent = startvalue ;
-      if ( startvalue == endvalue) {
-         clearInterval(counter);
-      }
-   }, duration);
- })
+window.onscroll = function () {
+  if (window.scrollY >= section.offsetTop) {
+    if (!started) {
+      nums.forEach((num) => startCount(num));
+    }
+    started = true;
+  }
+};
 
+function startCount(el) {
+  let goal = el.dataset.goal;
+  let count = setInterval(() => {
+    el.textContent++;
+    if (el.textContent == goal) {
+      clearInterval(count);
+    }
+  }, 2000 / goal);
+}
+function statuss() {
+   var status = document.querySelectorAll(".status");
+ 
+   for (var i = 0; i < status.length; i++) {
+     var windowHeight = window.innerHeight;
+     var elementTop = status[i].getBoundingClientRect().top;
+     var elementVisible = 50;
+ 
+     if (elementTop < windowHeight - elementVisible) {
+      status[i].classList.add("active");
+     } else {
+      status[i].classList.remove("active");
+     }
+   }
+ }
 
+function trans() {
+   var trans = document.querySelectorAll(".trans");
+ 
+   for (var i = 0; i < trans.length; i++) {
+     var windowHeight = window.innerHeight;
+     var elementTop = trans[i].getBoundingClientRect().top;
+     var elementVisible = 50;
+ 
+     if (elementTop < windowHeight - elementVisible) {
+      trans[i].classList.add("active");
+     } else {
+      trans[i].classList.remove("active");
+     }
+   }
+ }
+ function happycostumer() {
+   var happycostumer = document.querySelectorAll(".happycostumer");
+ 
+   for (var i = 0; i < happycostumer.length; i++) {
+     var windowHeight = window.innerHeight;
+     var elementTop = happycostumer[i].getBoundingClientRect().top;
+     var elementVisible = 150;
+ 
+     if (elementTop < windowHeight - elementVisible) {
+      happycostumer[i].classList.add("active");
+     } else {
+      happycostumer[i].classList.remove("active");
+     }
+   }
+ }
 
+ function projectcomplet() {
+   var projectcomplet = document.querySelectorAll(".projectcomplet");
+ 
+   for (var i = 0; i < projectcomplet.length; i++) {
+     var windowHeight = window.innerHeight;
+     var elementTop = projectcomplet[i].getBoundingClientRect().top;
+     var elementVisible = 150;
+ 
+     if (elementTop < windowHeight - elementVisible) {
+      projectcomplet[i].classList.add("active");
+     } else {
+      projectcomplet[i].classList.remove("active");
+     }
+   }
+ }
+ function cups() {
+   var cups = document.querySelectorAll(".cups");
+ 
+   for (var i = 0; i < cups.length; i++) {
+     var windowHeight = window.innerHeight;
+     var elementTop = cups[i].getBoundingClientRect().top;
+     var elementVisible = 150;
+ 
+     if (elementTop < windowHeight - elementVisible) {
+      cups[i].classList.add("active");
+     } else {
+      cups[i].classList.remove("active");
+     }
+   }
+ }
+ window.addEventListener("scroll", statuss);
+ window.addEventListener("scroll", trans);
+ window.addEventListener("scroll", happycostumer);
+ window.addEventListener("scroll", projectcomplet);
+ window.addEventListener("scroll", cups);
+ window.addEventListener("scroll", animes);
 
 
 
  /* ******************* animation on scroll  ********************* */
 
+  /* ******* Part2 About  ******* */
+  function happyface() {
+   var happyface = document.querySelectorAll(".happyface");
+ 
+   for (var i = 0; i < happyface.length; i++) {
+     var windowHeight = window.innerHeight;
+     var elementTop = happyface[i].getBoundingClientRect().top;
+     var elementVisible = 50;
+ 
+     if (elementTop < windowHeight - elementVisible) {
+      happyface[i].classList.add("active");
+     } else {
+      happyface[i].classList.remove("active");
+     }
+   }
+ }
+ function animes() {
+   var animes = document.querySelectorAll(".animes");
+ 
+   for (var i = 0; i < animes.length; i++) {
+     var windowHeight = window.innerHeight;
+     var elementTop = animes[i].getBoundingClientRect().top;
+     var elementVisible = 150;
+ 
+     if (elementTop < windowHeight - elementVisible) {
+      animes[i].classList.add("active");
+     } else {
+      animes[i].classList.remove("active");
+     }
+   }
+ }
+ window.addEventListener("scroll", happyface);
+ window.addEventListener("scroll", animes);
+
+  /* ******* Part3 services  ******* */
  function reveal() {
    var reveals = document.querySelectorAll(".reveal");
  

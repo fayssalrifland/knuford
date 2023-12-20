@@ -558,6 +558,9 @@ div.transparant{
     justify-content: center;
     align-items: center;
 }
+div.transparant .trans{
+    display: flex;
+}
 div.transparant .happycostumer,.projectcomplet,.cups{
     display: flex;
 }
